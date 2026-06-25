@@ -2,7 +2,7 @@
 
 [![Deploy to GitHub Pages](https://github.com/Flaironne/flaironne.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/Flaironne/flaironne.github.io/actions/workflows/deploy.yml)
 
-Portfolio personnel — [florianwu.github.io](https://flaironne.github.io)
+Portfolio personnel — [flaironne.github.io](https://flaironne.github.io)
 
 **Stack :** Angular 21 · SSR/Prerender · Tailwind CSS v4 · SCSS · GitHub Pages
 
