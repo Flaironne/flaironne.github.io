@@ -1,0 +1,227 @@
+<section
+  id="contact"
+  class="py-24 lg:py-32 px-4 bg-zinc-900/30"
+  aria-labelledby="contact-title"
+>
+  <div class="max-w-4xl mx-auto">
+
+    <!-- Section header -->
+    <div appFadeIn class="mb-16">
+      <p class="text-emerald-400 text-sm font-mono font-medium tracking-wider uppercase mb-3">04. Contact</p>
+      <h2 id="contact-title" class="text-3xl sm:text-4xl font-bold text-zinc-50 mb-4">
+        Travaillons ensemble
+      </h2>
+      <div class="w-16 h-px bg-emerald-400"></div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16">
+
+      <!-- Left: info -->
+      <div appFadeIn [delay]="100" class="lg:col-span-2 space-y-8">
+        <p class="text-zinc-400 leading-relaxed">
+          Une question, une opportunité de collaboration, ou simplement envie de dire bonjour ?
+          N'hésitez pas à me contacter — je réponds sous rapidement.
+        </p>
+
+        <div class="space-y-4">
+          <!-- Email -->
+          <div>
+            <p class="text-xs font-semibold text-zinc-500 uppercase tracking-wider mb-1.5">Email</p>
+            <a
+              href="mailto:wuflorian2000@gmail.com"
+              class="inline-flex items-center gap-2 text-zinc-300 hover:text-emerald-400 transition-colors duration-200 text-sm font-medium"
+              aria-label="Envoyer un email à wuflorian2000@gmail.com"
+            >
+              <svg class="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              wuflorian2000@gmail.com
+            </a>
+          </div>
+
+          <!-- Socials -->
+          <div>
+            <p class="text-xs font-semibold text-zinc-500 uppercase tracking-wider mb-2">Réseaux</p>
+            <div class="flex gap-3">
+              <a
+                href="https://github.com/florianwu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="p-2.5 rounded-lg border border-zinc-800 text-zinc-400 hover:text-zinc-50 hover:border-zinc-600 transition-all duration-200"
+                aria-label="GitHub (ouvre un nouvel onglet)"
+              >
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a
+                href="https://linkedin.com/in/florianwu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="p-2.5 rounded-lg border border-zinc-800 text-zinc-400 hover:text-zinc-50 hover:border-zinc-600 transition-all duration-200"
+                aria-label="LinkedIn (ouvre un nouvel onglet)"
+              >
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div appFadeIn [delay]="200" class="lg:col-span-3">
+
+        @if (formStatus() === 'success') {
+          <!-- Success state -->
+          <div class="flex flex-col items-center justify-center text-center py-16 px-8
+                      rounded-2xl border border-emerald-400/30 bg-emerald-400/5">
+            <div class="w-14 h-14 rounded-full bg-emerald-400/10 flex items-center justify-center mb-4">
+              <svg class="w-7 h-7 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-zinc-50 mb-2">Message envoyé !</h3>
+            <p class="text-zinc-400 text-sm mb-6">Merci, je vous répondrai dans les plus brefs délais.</p>
+            <button
+              type="button"
+              (click)="resetForm()"
+              class="text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors"
+            >
+              Envoyer un autre message
+            </button>
+          </div>
+
+        } @else if (formStatus() === 'error') {
+          <!-- Error state -->
+          <div class="flex flex-col items-center justify-center text-center py-12 px-8
+                      rounded-2xl border border-red-500/30 bg-red-500/5 mb-6">
+            <div class="w-12 h-12 rounded-full bg-red-500/10 flex items-center justify-center mb-3">
+              <svg class="w-6 h-6 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </div>
+            <p class="text-zinc-300 text-sm mb-4">Une erreur est survenue. Réessayez ou contactez-moi directement.</p>
+            <button
+              type="button"
+              (click)="resetForm()"
+              class="text-sm font-medium text-red-400 hover:text-red-300 transition-colors"
+            >
+              Réessayer
+            </button>
+          </div>
+
+        } @else {
+          <!-- Form -->
+          <form
+            (submit)="onSubmit($event)"
+            novalidate
+            class="space-y-5"
+            aria-label="Formulaire de contact"
+          >
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <!-- Name -->
+              <div>
+                <label for="contact-name" class="block text-sm font-medium text-zinc-300 mb-1.5">
+                  Nom <span class="text-emerald-400" aria-label="champ requis">*</span>
+                </label>
+                <input
+                  id="contact-name"
+                  type="text"
+                  name="name"
+                  autocomplete="name"
+                  [value]="name()"
+                  (input)="name.set($any($event.target).value)"
+                  placeholder="Jean Dupont"
+                  required
+                  class="w-full px-4 py-3 rounded-xl border border-zinc-800 bg-zinc-900
+                         text-zinc-50 placeholder-zinc-600 text-sm
+                         focus:outline-none focus:ring-2 focus:ring-emerald-400/50 focus:border-emerald-400/50
+                         transition-all duration-200"
+                />
+              </div>
+
+              <!-- Email -->
+              <div>
+                <label for="contact-email" class="block text-sm font-medium text-zinc-300 mb-1.5">
+                  Email <span class="text-emerald-400" aria-label="champ requis">*</span>
+                </label>
+                <input
+                  id="contact-email"
+                  type="email"
+                  name="email"
+                  autocomplete="email"
+                  [value]="email()"
+                  (input)="email.set($any($event.target).value)"
+                  placeholder="jean@exemple.com"
+                  required
+                  class="w-full px-4 py-3 rounded-xl border border-zinc-800 bg-zinc-900
+                         text-zinc-50 placeholder-zinc-600 text-sm
+                         focus:outline-none focus:ring-2 focus:ring-emerald-400/50 focus:border-emerald-400/50
+                         transition-all duration-200"
+                />
+              </div>
+            </div>
+
+            <!-- Message -->
+            <div>
+              <label for="contact-message" class="block text-sm font-medium text-zinc-300 mb-1.5">
+                Message <span class="text-emerald-400" aria-label="champ requis">*</span>
+              </label>
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="6"
+                [value]="message()"
+                (input)="message.set($any($event.target).value)"
+                placeholder="Décrivez votre projet, votre question..."
+                required
+                class="w-full px-4 py-3 rounded-xl border border-zinc-800 bg-zinc-900
+                       text-zinc-50 placeholder-zinc-600 text-sm resize-none
+                       focus:outline-none focus:ring-2 focus:ring-emerald-400/50 focus:border-emerald-400/50
+                       transition-all duration-200"
+              ></textarea>
+            </div>
+
+            <!-- Validation error -->
+            @if (validationError()) {
+              <p role="alert" class="text-sm text-red-400 flex items-center gap-1.5">
+                <svg class="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+                {{ validationError() }}
+              </p>
+            }
+
+            <!-- Submit -->
+            <button
+              type="submit"
+              [disabled]="formStatus() === 'sending'"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl
+                     font-semibold text-sm bg-emerald-400 text-zinc-950
+                     hover:bg-emerald-300 transition-all duration-200
+                     focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950
+                     disabled:opacity-60 disabled:cursor-not-allowed shadow-lg shadow-emerald-400/20"
+            >
+              @if (formStatus() === 'sending') {
+                <svg class="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+                </svg>
+                Envoi en cours…
+              } @else {
+                Envoyer le message
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              }
+            </button>
+          </form>
+        }
+
+      </div>
+    </div>
+
+  </div>
+</section>
