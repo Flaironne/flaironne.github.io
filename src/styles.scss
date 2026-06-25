@@ -1,2 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
-@import "tailwindcss";
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #09090b; /* zinc-950 */
+  color: #fafafa; /* zinc-50 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: rgb(52 211 153 / 0.2);
+  color: #fafafa;
+}
+
+/* Section scroll-reveal animation */
+.section-fade {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.section-fade.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero entrance animations */
+@keyframes hero-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-animate {
+  animation: hero-fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@for $i from 0 through 5 {
+  .hero-delay-#{$i} { animation-delay: #{$i * 100}ms; }
+}
+/* Avatar: intentionally offset between step 1 (100ms) and step 2 (200ms) */
+.hero-delay-6 { animation-delay: 150ms; }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #34d399;
+}
