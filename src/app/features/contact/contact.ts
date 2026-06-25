@@ -58,6 +58,7 @@ export class ContactComponent {
           name,
           email,
           message,
+          botcheck: false,
         }),
       });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);

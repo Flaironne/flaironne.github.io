@@ -1,4 +1,4 @@
-# florianwu.github.io
+# flaironne.github.io
 
 [![Deploy to GitHub Pages](https://github.com/Flaironne/flaironne.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/Flaironne/flaironne.github.io/actions/workflows/deploy.yml)
 
