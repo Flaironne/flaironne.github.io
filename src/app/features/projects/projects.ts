@@ -8,7 +8,7 @@ export interface Project {
   gradient: string;
   accentColor: string;
   stack: string[];
-  githubUrl: string;
+  githubUrl?: string;
   demoUrl?: string;
   badge?: string;
 }
@@ -34,6 +34,17 @@ export class ProjectsComponent {
       badge: 'Projet scolaire',
     },
     {
+      title: 'SOC AI Server',
+      description:
+        "Serveur IA permettant d'intégrer des modèles clients via RAG " +
+        "pour des réponses contextualisées au sein des logiciels Devisoc et JustBim. " +
+        "Conception de l'API, modélisation de la base et gestion des embeddings.",
+      gradient: 'from-fuchsia-900/50 to-purple-900/50',
+      accentColor: '#e879f9',
+      stack: ['Python (FastAPI)', 'PostgreSQL', 'Tortoise ORM', 'RAG'],
+      badge: 'Projet pro',
+    },
+    {
       title: "Carnet d'Adresses",
       description:
         `Référentiel tiers multi-environnement (Cloud + intégration Devisoc) :
@@ -42,7 +53,6 @@ export class ProjectsComponent {
       gradient: 'from-violet-900/50 to-indigo-900/50',
       accentColor: '#818cf8',
       stack: ['React', 'TypeScript', 'Node.js', 'Python (FastAPI)', 'PostgreSQL', 'Docker'],
-      githubUrl: 'https://github.com/flaironne',
       badge: 'Projet pro',
     },
     {
@@ -56,6 +66,17 @@ export class ProjectsComponent {
       stack: ['React Native', 'Python', 'CamemBERT', 'NLP', 'Neo4j'],
       githubUrl: 'https://github.com/flaironne',
       badge: 'Projet scolaire',
+    },
+    {
+      title: 'SOC Online',
+      description:
+        "Plateforme web de gestion de projets à destination des clients de SOC Informatique. " +
+        "Développement des interfaces React et du back-end Python FastAPI, " +
+        "avec authentification Keycloak et déploiement Kubernetes.",
+      gradient: 'from-blue-900/50 to-slate-900/50',
+      accentColor: '#60a5fa',
+      stack: ['React', 'Python (FastAPI)', 'Keycloak', 'Kubernetes'],
+      badge: 'Projet pro',
     },
     {
       title: 'Job Board',

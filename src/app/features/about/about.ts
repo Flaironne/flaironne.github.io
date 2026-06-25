@@ -26,11 +26,11 @@ export class AboutComponent {
     },
     {
       name: 'Bases de données',
-      skills: ['PostgreSQL', 'MySQL', 'SQLite'],
+      skills: ['PostgreSQL', 'MySQL', 'SQLite', 'Tortoise ORM'],
     },
     {
       name: 'DevOps & Outils',
-      skills: ['Docker', 'Docker Compose', 'CI/CD (Bitbucket)', 'Keycloak', 'Git'],
+      skills: ['Docker', 'Docker Compose', 'Kubernetes', 'CI/CD (Bitbucket)', 'Keycloak', 'Git'],
     },
     {
       name: 'Langues',
