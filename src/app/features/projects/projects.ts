@@ -80,6 +80,18 @@ export class ProjectsComponent {
       badge: 'Projet scolaire',
     },
     {
+      title: 'Time Manager',
+      description:
+        "Application de gestion du temps de travail pour une mairie fictive (projet Gotham) : " +
+        "suivi des présences, dashboards hebdomadaires/journaliers, gestion des équipes " +
+        "et rôles (employé, manager, directeur général). Back-end Elixir/Phoenix, front Vue.js.",
+      gradient: 'from-rose-900/50 to-red-900/50',
+      accentColor: '#fb7185',
+      stack: ['Vue.js', 'Elixir', 'Phoenix', 'Docker'],
+      githubUrl: 'https://github.com/flaironne',
+      badge: 'Projet scolaire',
+    },
+    {
       title: 'Travel Order Resolver',
       description:
         "Chatbot intelligent de recherche d'itinéraires ferroviaires : " +
